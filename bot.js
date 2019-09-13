@@ -72,7 +72,7 @@ II смена:
 `
 
 vk.updates.on('message', (context, next) => {
-	const { messagePayload } = context;
+	const messagePayload = context;
 
 	context.state.command = messagePayload && messagePayload.command
 		? messagePayload.command
